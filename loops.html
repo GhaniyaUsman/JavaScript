@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops</h1>
+    
+</body>
+<script>
+for (let i = 0; i < 10; i++ ){
+    console.log("Hello World!");
+}
+let i = 10;
+while (i>10)
+{
+    console.log("Hello world");
+    i--;
+}
+
+//For...in loop we need to create a object,
+//there will be keys and the loops will be automatically made with it
+//there will be keys that can access you directly to the info of object
+let animal ={
+    name : "Zebra",
+    legs : 4
+}
+for(let key in animal){
+    console.log(key, animal[key]);
+}
+//For..in with help of arrays
+
+let names = ["Ghaniya", "Esha", "Wajeeha"];
+for (let index in names){
+    console.log(index, names[index])
+}
+
+//For..off loops with arrays gives ud directlt the data from the key
+
+for(let name of names){
+    console.log(name)
+}
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h1>strings</h1>
+    <h2>Fixing capitalization</h2>
+    <div class="output">
+        <ul>
+
+        </ul>
+    </div>
+</body>
+<script>
+    const list = document.querySelector('.output ul');
+    list.innerHTML = '';
+    let cities = ['lahore', 'karachi', 'islamabad', 'quetta'];
+
+    for(let i=o; i<cities.lenght; i++){
+        let firstalpha = cities[i].slice(0,1);
+        let lowercasecity = cities[i].toLocaleLowerCase;
+        lowercasecity.replace(firstalpha,firstalpha.uppercase());
+        
+    }
+</script>
+</html>

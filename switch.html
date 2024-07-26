@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h1>Multiple names of fruits</h1>
+</body>
+<script>
+    var fruittype = prompt("What fruit do you want?")
+
+switch(fruittype){
+   
+    // console log is when we wantto lock something into developers tool
+    case 'Orange':
+    console.log(' Orange is $4 per kg'); 
+    break;
+    case 'Apple':
+    console.log(' Apple is $8 per kg'); 
+    break;  
+    case 'PineApple':
+    console.log(' PineApple is $3 per kg'); 
+    break;  
+    case 'Guava':
+    console.log(' Guava is $8 per kg'); 
+    break;  
+    case 'Mango':
+    console.log(' Mango is $12 per kg'); 
+    break;  
+    case 'Kiwi':
+    console.log(' Kiwi is $17 per kg'); 
+    break;  
+    default:
+        console.log(`${fruittype} This fruit is currently not available`);
+}
+console.log(' Do you want to buy something else? ');
+
+//switches have multiple cases and they excute when 
+//the result of expression matches the value
+// default is used hwne case isnt execute means the
+// switch you want to turn on isnt available so it will execute instead of it
+// break will be used in the end of every case
+
+</script>
+</html>

@@ -1,0 +1,13 @@
+button{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid yellow;
+    background: lightyellow;
+    color: blue;
+    box-shadow: 1px 1px 2px navy;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
