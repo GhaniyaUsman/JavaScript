@@ -37,11 +37,22 @@ for (let index in names){
     console.log(index, names[index])
 }
 
-//For..off loops with arrays gives ud directlt the data from the key
+//For..of loops with arrays gives ud directlt the data from the key
 
 for(let name of names){
     console.log(name)
 }
+
+//do-while loop
+var myArray = [];
+var g = 10;
+
+do{
+    myArray.push(g);
+    g++;
+} while (g <5)
+
+console.log(g, myArray);
 
 </script>
 </html>

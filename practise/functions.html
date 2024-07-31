@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+</body>
+<script>
+
+    function cookMaggi(maggi, water, sauces){
+        console.log("Your maggi will be ready in "
+        + maggi * 2
+        + " minutes"
+        + " and ingredients used are:- "
+        + maggi + " Maggi "
+        + water + " cups of water"
+        +" using " + sauces + " pan" )
+    }
+
+    let bread1 = prompt("which bread you would like to get? ");
+    let veggies = prompt("what are you vegetable requirements? ");
+    let sauces1 = prompt("what sauces do you prefer? ");
+
+    function makesandwich(bread, veggies, sauces){
+        let sandwich = bread + "bread" + veggies + " " + "vegetables" + sauces + "sauces" + "sandwich";
+        return sandwich;
+    }
+
+    let vegSandwich = makeSandwich(bread1, veggies, sauce1);
+
+    cookMaggi(4, 8, 1);
+
+    //exercise
+    var changed = 0;
+    function change(num){
+        return (num +5)/3;
+    }
+
+    changed = change(10);
+     var processed = 0;
+     function processArg(num){
+        return (num +3)/5;
+     }
+    processed = processArg(7);
+
+    //queue (stand in line)
+     function nextInLine(arr, item){
+
+        arr.push(item);
+        return arr.shift();
+     }
+     var testArr =[1,2,3,4,5];
+
+     console.log("Before: " + JSON.stringify(testArr));
+     console.log(nextInLine(testArr, 6));
+     console.log("After: " + JSON.stringify(testArr));
+
+     //Boolean values
+     function welcomeToBoolean(){
+        return false;
+     }
+</script>
+</html>

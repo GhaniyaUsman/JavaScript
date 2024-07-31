@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile LookUp</title>
+</head>
+<body>
+    <h1>Profile lookup</h1>
+    <script>
+        var contacts = [
+    {
+        firstName: "Aisha",
+        secondName: "Khan",
+        phoneNumber: "123-456-7890",
+        city: "Karachi"
+    },
+    {
+        firstName: "Bilal",
+        secondName: "Ahmed",
+        phoneNumber: "234-567-8901",
+        city: "Lahore"
+    },
+    {
+        firstName: "Sana",
+        secondName: "Malik",
+        phoneNumber: "345-678-9012",
+        city: "Islamabad"
+    },
+    {
+        firstName: "Ali",
+        secondName: "Hassan",
+        phoneNumber: "456-789-0123",
+        city: "Rawalpindi"
+    },
+    {
+        firstName: "Fatima",
+        secondName: "Sheikh",
+        phoneNumber: "567-890-1234",
+        city: "Peshawar"
+    }
+];
+
+    console.log(contacts);
+    function lookUpProfile(name, prop){
+        for (var i = 0; i < contacts.length; i++){
+            if(contacts[i].firstName === name){
+                return contacts[i][prop] || "no such property";
+            }
+        }
+        return "no such contact";
+    }
+    var data = lookUpProfile("Fatima", "city");
+    console.lo(data);
+    </script>
+</body>
+</html>
